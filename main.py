@@ -117,9 +117,9 @@ banner = color.BOLD + color.RED +'''
  |  __  |/ _` | __/ __| '_ \\
  | |  | | (_| | || (__| | | |
  |_|  |_|\__,_|\__\___|_| |_|
-  {0}[{1}-{2}]--> {3}V.1.0
-  {4}[{5}-{6}]--> {7}coded by Metachar
-  {8}[{9}-{10}]-->{11} brute-force tool                      '''.format(color.RED, color.CWHITE,color.RED,color.GREEN,color.RED, color.CWHITE,color.RED,color.GREEN,color.RED, color.CWHITE,color.RED,color.GREEN)
+  {0}[{1}-{2}]--> {3}v.1.3.2
+  {4}[{5}-{6}]--> {7}coded by Metachar, update v1.3.2 by gg2001
+  {8}[{9}-{10}]-->{11} web brute-force tool                      '''.format(color.RED, color.CWHITE,color.RED,color.GREEN,color.RED, color.CWHITE,color.RED,color.GREEN,color.RED, color.CWHITE,color.RED,color.GREEN)
 
 driver = webdriver.Chrome(CHROME_DVR_DIR)
 optionss = webdriver.ChromeOptions()
