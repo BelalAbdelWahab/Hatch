@@ -33,11 +33,11 @@ now = datetime.datetime.now()
 
 
 #Args
-parser.add_option("-u", "--username", dest="username",help="Choose the username")
+parser.add_option("--username", dest="username",help="Choose the username")
 parser.add_option("--usernamesel", dest="usernamesel",help="Choose the username selector")
 parser.add_option("--passsel", dest="passsel",help="Choose the password selector")
-parser.add_option("--passlist", dest="passlist",help="Enter the password list directory")
-parser.add_option("--website", dest="website",help="choose a website")
+parser.add_option("--passlist", dest="passlist",help="Enter the password list location")
+parser.add_option("--website", dest="website",help="Choose a website")
 (options, args) = parser.parse_args()
 
 

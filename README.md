@@ -1,43 +1,54 @@
 # Hatch
-Hatch is a brute force tool that is used to brute force most websites
+Hatch is a web brute-force tool that works on most websites, written in Python 2.7.
 
-# Update! v.1.3.1
-added arg support **yay**
-<br>
-  -h, --help            show this help message and exit<br>
-  -u USERNAME, --username=USERNAME Choose the username<br>
-  --usernamesel=USERNAMESEL Choose the username selector<br>
-  --passsel=PASSSEL     Choose the password selector<br>
-  --loginsel=LOGINSEL   Choose the login button selector<br>
-  --passlist=PASSLIST   Enter the password list directory<br>
-  --website=WEBSITE     choose a website<br>
-dont worry if you load up the tool without any args youll go to the default wizard!
-Also i removed the apt xvfb and pip2 pyvirtualdisplay
-## Installation Instructions
+![Screenshot 1](screenshots/screenshot1.png)
+
+# Update v.1.3.2
+Removed the login button selector, and changed it so that the ENTER key is sent after entering the password.
+
+## How to Use
+Tested on Ubuntu 18.04 Desktop.
 ```
-git clone https://github.com/MetaChar/Hatch
+git clone https://github.com/gg2001/Hatch.git
+cd Hatch
 python2 main.py
 ```
 
+Run this tool without arguments to open the wizard.
+```
+  -h, --help                  Show this help message and exit
+  --username=USERNAME         Choose the username
+  --usernamesel=USERNAMESEL   Choose the username selector
+  --passsel=PASSSEL           Choose the password selector
+  --passlist=PASSLIST         Enter the password list location
+  --website=WEBSITE           Choose a website
+```
+
+1. Open the login page of a website.
+2. Get a password list ready.
+3. Copy the selector of the username and password input. (ex. #username and #password)
+4. Run the tool without arguments and enter the details in the wizard or run the tool with all the arguments.
+
+Here is an old [video](https://youtu.be/Hd_kQVnajxk) demonstrating this tool.
+
 ## Requirements
+Ensure that python2 and pip2 are installed.
+
+Install these packages:
 ```
 pip2 install selenium
 pip2 install requests
 ```
-Chrome and chromedriver are required
 
-You can download chromedriver here: http://chromedriver.chromium.org/downloads
-for this fork, create a folder in your C drive called 'webdrivers' and place the executable file inside. If you want to use a different directory, simply change the CHROME_DVR_DIR variable inside the python file.
+Chrome and chromedriver are required:
+```
+sudo apt install chromium-browser
 
-<br>
-## How to use (text)
-1). Find a website with a login page<br>
-2). Inspect element to find the Selector of the username form<br>
-3). Do the same for the password field<br>
-4). The the login form <br>
-5). When Asked put in the username to brute force<br>
-6). Watch it go!
+wget https://chromedriver.storage.googleapis.com/2.41/chromedriver_linux64.zip
+unzip chromedriver_linux64.zip
+sudo mv chromedriver /usr/bin/chromedriver
+sudo chown root:root /usr/bin/chromedriver
+sudo chmod +x /usr/bin/chromedriver
+```
 
-## How to use (Video)
-[![IMAGE ALT TEXT](https://i.ytimg.com/vi/Hd_kQVnajxk/1.jpg)](https://youtu.be/Hd_kQVnajxk "Video Title")
-
+If you installed chromedriver to a different location change the variable CHROME_DVR_DIR in the main.py file. 
