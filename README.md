@@ -3,7 +3,7 @@ Hatch is a web brute-force tool that works on most websites, written in Python 2
 
 ![Screenshot 1](screenshots/screenshot1.png)
 
-# Update v.1.3.2
+## Update v.1.3.2
 Removed the login button selector, and changed it so that the ENTER key is sent after entering the password.
 
 ## How to Use
