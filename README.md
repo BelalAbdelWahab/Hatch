@@ -29,12 +29,15 @@ Run this tool without arguments to open the wizard.
 3. Copy the selector of the username and password input. (ex. #username and #password)
 4. Run the tool without arguments and enter the details in the wizard or run the tool with all the arguments.
 
-Here is an old [video](https://youtu.be/Hd_kQVnajxk) demonstrating this tool.
+Example:
+```
+python2 main.py --username=email@example.com --usernamesel=#username --passsel=#password --passlist=/home/ubuntu/passlist.txt --website=https://example.com/login
+```
+
+Here is an old [video](https://youtu.be/Hd_kQVnajxk) demonstration.
 
 ## Requirements
-Ensure that python2 and pip2 are installed.
-
-Install these packages:
+Ensure that python2 and pip2 are installed. These packages are required:
 ```
 pip2 install selenium
 pip2 install requests
