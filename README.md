@@ -26,7 +26,7 @@ Run this tool without arguments to open the wizard.
 
 1. Open the login page of a website.
 2. Get a password list ready.
-3. Copy the selector of the username and password input. (ex. #username and #password)
+3. Copy the selector of the username and password input. (e.g. #username and #password)
 4. Run the tool without arguments and enter the details in the wizard or run the tool with all the arguments.
 
 Example:
