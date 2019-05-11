@@ -1,5 +1,5 @@
 # Hatch
-Hatch is a web brute-force tool that works on most websites, written in Python 2.7.
+Hatch is a web login brute-force tool that works on most websites, written in Python 2.7.
 
 ![Screenshot 1](screenshots/screenshot1.png)
 
