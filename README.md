@@ -45,6 +45,7 @@ pip2 install requests
 
 Chrome and chromedriver are required:
 ```
+sudo apt update
 sudo apt install chromium-browser
 
 wget https://chromedriver.storage.googleapis.com/2.41/chromedriver_linux64.zip
