@@ -55,4 +55,4 @@ sudo chown root:root /usr/bin/chromedriver
 sudo chmod +x /usr/bin/chromedriver
 ```
 
-If you installed chromedriver to a different location change the variable CHROME_DVR_DIR in the main.py file. 
+If you installed chromedriver to a different location change the variable ```CHROME_DVR_DIR``` in the ```main.py``` file. 
